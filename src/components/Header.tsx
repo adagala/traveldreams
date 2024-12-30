@@ -43,7 +43,7 @@ export default function Header() {
             <nav
               className={`${
                 isMenuOpen ? "flex" : "hidden"
-              } flex-col sm:hidden absolute left-0 top-16 w-full bg-white shadow-md`}
+              } flex-col sm:hidden absolute left-0 top-16 w-full bg-white shadow-md z-50`}
             >
               <ul className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6 p-4 sm:p-0">
                 {navigation.map(({ href, title }) => (
