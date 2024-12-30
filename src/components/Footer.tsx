@@ -44,7 +44,7 @@ export default function Footer() {
             <address className="text-gray-400 not-italic">
               <p>4556 Peponi Road</p>
               <p>Kitisuru, Nairobi Kenya</p>
-              <p>Phone: (254) 702789009</p>
+              <p>Phone: (254) 0737605955</p>
               <p>Email: info@traveldreams.com</p>
             </address>
           </div>

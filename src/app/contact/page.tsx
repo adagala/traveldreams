@@ -24,7 +24,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold">Phone</h3>
-                    <p>(254) 702789009</p>
+                    <p>(254) 0737605955</p>
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold">Email</h3>

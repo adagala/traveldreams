@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, MessageCircleMore, X } from "lucide-react";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -63,11 +63,16 @@ export default function Header() {
               </ul>
             </nav>
             <div className="ml-4 flex items-center">
-              {/* <Button>
-                <Link target="_blank" href="https://wa.me/254737605955">
-                  Chat on WhatsApp
+              <Button>
+                <Link
+                  className="flex items-center gap-1"
+                  target="_blank"
+                  href="https://wa.me/254737605955"
+                >
+                  <MessageCircleMore />
+                  <span className="hidden md:block">Chat on WhatsApp</span>
                 </Link>
-              </Button> */}
+              </Button>
               <Button
                 variant="ghost"
                 size="icon"
