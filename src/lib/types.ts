@@ -12,6 +12,7 @@ interface IItinerary {
 export interface ITour {
   id: string;
   title: string;
+  slug: string;
   description: string;
   longDescription: string;
   price: string;

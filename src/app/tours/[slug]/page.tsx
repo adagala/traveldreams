@@ -4,17 +4,17 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { tours } from "@/lib/tours";
 
-const getTourById = (id: string) => {
-  return tours.find((tour) => tour.id === id);
+const getTourBySlug = (slug: string) => {
+  return tours.find((tour) => tour.slug === slug);
 };
 
 export default async function TourDetailsPage({
   params,
 }: {
-  params: Promise<{ id: string }>;
+  params: Promise<{ slug: string }>;
 }) {
-  const { id } = await params;
-  const tour = getTourById(id);
+  const { slug } = await params;
+  const tour = getTourBySlug(slug);
 
   if (!tour) {
     return <div>Tour not found</div>;
@@ -68,7 +68,9 @@ export default async function TourDetailsPage({
           <h2 className="text-3xl font-semibold mb-4">Itinerary</h2>
           {tour.itinerary.map((item) => (
             <div key={item.day} className="mb-4">
-              <h3 className="text-xl font-semibold mb-2">Day {item.day}: {item.title}</h3>
+              <h3 className="text-xl font-semibold mb-2">
+                Day {item.day}: {item.title}
+              </h3>
               {item.activities.map((activity) => (
                 <div key={activity.time} className="mb-2">
                   <p className="text-gray-700">

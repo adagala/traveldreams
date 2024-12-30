@@ -4,6 +4,7 @@ export const tours: ITour[] = [
   {
     id: "1",
     title: "Maasai Mara Experience",
+    slug: "maasai-mara-experience",
     description:
       "Witness the wonders of wildlife in their natural habitat at the Mara",
     longDescription:
@@ -129,6 +130,7 @@ export const tours: ITour[] = [
   {
     id: "2",
     title: "Amboseli Safari Adventure",
+    slug: "amboseli-safari-adventure",
     description:
       "Experience breathtaking views of Mt. Kilimanjaro and incredible wildlife encounters.",
     longDescription:
@@ -256,6 +258,7 @@ export const tours: ITour[] = [
   {
     id: "3",
     title: "Salt Lick Game Sanctuary",
+    slug: "salt-lick-game-sanctuary",
     description:
       "A unique safari experience blending scenic train travel and wildlife adventures at the iconic Salt Lick Lodge.",
     longDescription:
@@ -342,6 +345,7 @@ export const tours: ITour[] = [
   {
     id: "4",
     title: "Neptune Village Beach Resort & Spa Getaway",
+    slug: "neptune-village-beach-resort-spa-getaway",
     description: "Relax, rejuvenate, and unwind at the pristine Diani Beach.",
     longDescription:
       "Nestled along the white sandy shores of Diani Beach, Neptune Village Beach Resort & Spa offers a serene escape with world-class amenities, lush gardens, and stunning ocean views. Whether you're looking for adventure or relaxation, this resort has something for everyone.",
@@ -426,6 +430,7 @@ export const tours: ITour[] = [
   {
     id: "5",
     title: "Mt. Kenya Adventure Retreat",
+    slug: "mt-kenya-adventure-retreat",
     description:
       "Explore the serenity and majestic views of Mt. Kenya while enjoying luxurious stays.",
     longDescription:
@@ -533,6 +538,7 @@ export const tours: ITour[] = [
   {
     id: "6",
     title: "Taita Hills Safari & Resort Adventure",
+    slug: "taita-hills-safari-resort-adventure",
     description:
       "Experience the captivating landscapes and rich wildlife of Taita Hills Wildlife Sanctuary.",
     longDescription:
@@ -619,6 +625,7 @@ export const tours: ITour[] = [
   {
     id: "7",
     title: "Zanzibar Island Escape",
+    slug: "zanzibar-island-escape",
     description:
       "Immerse yourself in the turquoise waters, white sandy beaches, and vibrant culture of Zanzibar.",
     longDescription:

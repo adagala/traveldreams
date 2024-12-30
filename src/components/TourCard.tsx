@@ -30,7 +30,7 @@ export default function TourCard({ tour }: { tour: ITour }) {
       </CardContent>
       <CardFooter className="flex justify-between items-center">
         <span className="text-lg font-bold">{tour.price}</span>
-        <Link href={`/tours/${tour.id}`}>
+        <Link href={`/tours/${tour.slug}`}>
           <Button>Read More</Button>
         </Link>
       </CardFooter>
