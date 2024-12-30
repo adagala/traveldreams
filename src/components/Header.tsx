@@ -5,6 +5,13 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Menu, MessageCircleMore, X } from "lucide-react";
 
+const navigation: { title: string; href: string }[] = [
+  { title: "Home", href: "/" },
+  { title: "Tours", href: "/tours" },
+  { title: "Gallery", href: "/gallery" },
+  { title: "Contact", href: "/contact" },
+];
+
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -18,48 +25,38 @@ export default function Header() {
             TravelDreams
           </Link>
           <div className="flex items-center">
+            <nav className="hidden sm:flex  bg-white">
+              <ul className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6 p-4 sm:p-0">
+                {navigation.map(({ href, title }) => (
+                  <li key={title}>
+                    <Link
+                      href={href}
+                      className="text-gray-600 hover:text-blue-600 block py-2 sm:py-0"
+                      onClick={toggleMenu}
+                    >
+                      {title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
             <nav
               className={`${
                 isMenuOpen ? "flex" : "hidden"
-              } absolute top-full left-0 right-0 bg-white shadow-md flex-col sm:flex sm:flex-row sm:static sm:shadow-none`}
+              } flex-col sm:hidden absolute left-0 top-16 w-full bg-white shadow-md`}
             >
               <ul className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6 p-4 sm:p-0">
-                <li>
-                  <Link
-                    href="/"
-                    className="text-gray-600 hover:text-blue-600 block py-2 sm:py-0"
-                    onClick={toggleMenu}
-                  >
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/tours"
-                    className="text-gray-600 hover:text-blue-600 block py-2 sm:py-0"
-                    onClick={toggleMenu}
-                  >
-                    Tours
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/gallery"
-                    className="text-gray-600 hover:text-blue-600 block py-2 sm:py-0"
-                    onClick={toggleMenu}
-                  >
-                    Gallery
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/contact"
-                    className="text-gray-600 hover:text-blue-600 block py-2 sm:py-0"
-                    onClick={toggleMenu}
-                  >
-                    Contact
-                  </Link>
-                </li>
+                {navigation.map(({ href, title }) => (
+                  <li key={title}>
+                    <Link
+                      href={href}
+                      className="text-gray-600 hover:text-blue-600 block py-2 sm:py-0"
+                      onClick={toggleMenu}
+                    >
+                      {title}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </nav>
             <div className="ml-4 flex items-center">
