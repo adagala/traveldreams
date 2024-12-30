@@ -13,14 +13,6 @@ import TourCard from "@/components/TourCard";
 //     image: "/naivasha-hotels.jpg?height=200&width=300",
 //   },
 //   {
-//     id: 2,
-//     title: "Salt Lick Train Escape",
-//     description: "Immerse yourself in the coastal paradise",
-//     price: "$1599",
-//     duration: "7 days",
-//     image: "/salt-lick-safari-lodge-train.jpg?height=200&width=300",
-//   },
-//   {
 //     id: 3,
 //     title: "Mt Kenya Hotels and Lodges",
 //     description: "Relax on lush landscapes at the slopes of Mt Kenya",
@@ -36,22 +28,6 @@ import TourCard from "@/components/TourCard";
 //     price: "$1499",
 //     duration: "5 days",
 //     image: "/neptunevillage.jpg?height=200&width=300",
-//   },
-//   {
-//     id: 5,
-//     title: "Maasai Mara Package",
-//     description: "Witness the wonders of wildlife in their natural habitat",
-//     price: "$2499",
-//     duration: "8 days",
-//     image: "/masaimara-main.jpg?height=200&width=300",
-//   },
-//   {
-//     id: 6,
-//     title: "Amboseli Expedition",
-//     description: "Visit the land of giants and majestic views",
-//     price: "$2499",
-//     duration: "6 days",
-//     image: "/amboseli-national-park.jpg?height=200&width=300",
 //   },
 // ];
 
