@@ -1,8 +1,5 @@
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Textarea } from '@/components/ui/textarea'
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function ContactPage() {
   return (
@@ -15,15 +12,19 @@ export default function ContactPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               <div>
                 <h2 className="text-2xl font-semibold mb-4">Get in Touch</h2>
-                <p className="mb-6">Have questions about our tours or need help planning your dream vacation? We&apos;re here to help!</p>
+                <p className="mb-6">
+                  Have questions about our tours or need help planning your
+                  dream vacation? We&apos;re here to help!
+                </p>
                 <div className="space-y-4">
                   <div>
                     <h3 className="text-lg font-semibold">Address</h3>
-                    <p>123 Travel Street, Wanderlust City, WC 12345</p>
+                    <p>4556 Peponi Road</p>
+                    <p>Kitisuru, Nairobi Kenya</p>
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold">Phone</h3>
-                    <p>(123) 456-7890</p>
+                    <p>(254) 702789009</p>
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold">Email</h3>
@@ -32,22 +33,12 @@ export default function ContactPage() {
                 </div>
               </div>
               <div>
-                <h2 className="text-2xl font-semibold mb-4">Send Us a Message</h2>
-                <form className="space-y-4">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Name</label>
-                    <Input id="name" name="name" required />
-                  </div>
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email</label>
-                    <Input id="email" name="email" type="email" required />
-                  </div>
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message</label>
-                    <Textarea id="message" name="message" rows={4} required />
-                  </div>
-                  <Button type="submit" className="w-full">Send Message</Button>
-                </form>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.877809285016!2d36.79247139999999!3d-1.2440893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1783c50eb555%3A0x790be4c1725d5d87!2sPeponi%20Rd%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1735564754274!5m2!1sen!2ske"
+                  width="600"
+                  height="450"
+                  loading="lazy"
+                ></iframe>
               </div>
             </div>
           </div>
@@ -55,6 +46,5 @@ export default function ContactPage() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }
-

@@ -626,7 +626,7 @@ export const tours: ITour[] = [
     price: "$ 2,800.00",
     duration: "5 days",
     image: "/zanzibar-island.jpg?height=400&width=600",
-    featured: true,
+    featured: false,
     included: [
       "Round-trip flights from Nairobi to Zanzibar.",
       "4 nights' accommodation in luxurious beach resorts.",
