@@ -3,34 +3,6 @@ import Footer from "@/components/Footer";
 import { tours } from "@/lib/tours";
 import TourCard from "@/components/TourCard";
 
-// const tours = [
-//   {
-//     id: 1,
-//     title: "Naivasha Getaway",
-//     description: "Experience the magic of the Rift Valley",
-//     price: "$1299",
-//     duration: "5 days",
-//     image: "/naivasha-hotels.jpg?height=200&width=300",
-//   },
-//   {
-//     id: 3,
-//     title: "Mt Kenya Hotels and Lodges",
-//     description: "Relax on lush landscapes at the slopes of Mt Kenya",
-//     price: "$999",
-//     duration: "6 days",
-//     image:
-//       "/mt-kenya-hotels-and-lodges-christmas-rates.jpg?height=200&width=300",
-//   },
-//   {
-//     id: 4,
-//     title: "Neptune Village Beach Resort & Spa",
-//     description: "Discover the Big Apple's iconic landmarks",
-//     price: "$1499",
-//     duration: "5 days",
-//     image: "/neptunevillage.jpg?height=200&width=300",
-//   },
-// ];
-
 export default function ToursPage() {
   return (
     <div className="min-h-screen flex flex-col">
