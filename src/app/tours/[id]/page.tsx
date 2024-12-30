@@ -61,19 +61,23 @@ export default async function TourDetailsPage({
                   ))}
                 </ul>
               </div>
-              <div>
-                <h2 className="text-2xl font-semibold mb-4">Itinerary</h2>
-                {tour.itinerary.map((item) => (
-                  <div key={item.day} className="mb-4">
-                    <h3 className="text-xl font-semibold mb-2">
-                      Day {item.day}
-                    </h3>
-                    <p>{item.description}</p>
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
+        </div>
+        <div className="container mx-auto px-4 py-8">
+          <h2 className="text-3xl font-semibold mb-4">Itinerary</h2>
+          {tour.itinerary.map((item) => (
+            <div key={item.day} className="mb-4">
+              <h3 className="text-xl font-semibold mb-2">Day {item.day}: {item.title}</h3>
+              {item.activities.map((activity) => (
+                <div key={activity.time} className="mb-2">
+                  <p className="text-gray-700">
+                    <strong>{activity.time}:</strong> {activity.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          ))}
         </div>
       </main>
       <Footer />

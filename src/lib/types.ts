@@ -1,3 +1,14 @@
+interface IItineraryActivity {
+  time: string;
+  description: string;
+}
+
+interface IItinerary {
+  day: number;
+  title: string;
+  activities: IItineraryActivity[];
+}
+
 export interface ITour {
   id: string;
   title: string;
@@ -8,8 +19,5 @@ export interface ITour {
   image: string;
   included: string[];
   featured: boolean;
-  itinerary: {
-    day: number;
-    description: string;
-  }[];
+  itinerary: IItinerary[];
 }
