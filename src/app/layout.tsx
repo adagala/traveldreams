@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   React.useEffect(() => {
     sendGAEvent("event", "conversion", {
-      value: "AW-11535895531/mBVwCISs9oAaEOuX3_wq",
+      send_to: "AW-11535895531/mBVwCISs9oAaEOuX3_wq",
     });
   }, []);
 
