@@ -1,8 +1,11 @@
+"use client";
+
 import React from "react";
-import type { Metadata } from "next";
+// import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { GoogleAnalytics, sendGAEvent } from "@next/third-parties/google";
+import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,10 +17,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Travel Dreams",
-  description: "Travel Dreams Tours and Travel Agency",
-};
+// export const metadata: Metadata = {
+//   title: "Travel Dreams",
+//   description: "Travel Dreams Tours and Travel Agency",
+// };
 
 export default function RootLayout({
   children,
@@ -32,6 +35,13 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+    <Head>
+      <title>Travel Dreams</title>
+      <meta
+        name="description"
+        content="Travel Dreams Tours and Travel Agency"
+      />
+    </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
